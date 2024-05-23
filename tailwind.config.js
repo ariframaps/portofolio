@@ -7,6 +7,9 @@ module.exports = {
         lato: ['Lato', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      maxWidth: {
+        'screen-3xl': '1600px'
+      }
     },
   },
   plugins: [],
