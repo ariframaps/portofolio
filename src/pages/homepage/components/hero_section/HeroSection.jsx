@@ -27,6 +27,9 @@ export const HeroSection = () => {
                     <img className='relative z-[2]' src={arif_rama} alt="Arif Rama" />
                 </div>
             </div>
+            <p className='absolute inset-x-0 bottom-0 font-bold font-lato text-black'>
+                <p className='bg-white w-fit m-auto px-5 py-1 border'>My Skills:</p>
+            </p>
         </section>
     )
 }
