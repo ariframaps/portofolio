@@ -28,7 +28,7 @@ export const HeroSection = () => {
                 </div>
             </div>
             <p className='absolute inset-x-0 bottom-0 font-bold font-lato text-black'>
-                <p className='bg-white w-fit m-auto px-5 py-1 border'>My Skills:</p>
+                <p className='bg-white w-fit m-auto px-5 py-1.5'>My Skills:</p>
             </p>
         </section>
     )
