@@ -15,7 +15,7 @@ import MySQL from '../../../assets/logo/MySQL.svg';
 
 export const Skills = () => {
     return (
-        <section className="border border-transparent border-b-[#CBCBCB] text-center flex flex-col items-center justify-center py-[30px]">
+        <section className="relative z-[2] border border-transparent border-b-[#CBCBCB] text-center flex flex-col items-center justify-center py-[30px]">
             <div className='flex gap-[48px]'>
                 <img src={HTML} alt="HTML logo" />
                 <img src={CSS} alt="CSS logo" />

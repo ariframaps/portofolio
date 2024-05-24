@@ -4,7 +4,7 @@ import { Blob } from './components/Blob';
 
 export const HeroSection = () => {
     return (
-        <section className="relative min-h-screen bg-[url('../assets/background/hero_image-light.webp')]">
+        <section className="relative z-[2] min-h-screen bg-[url('../assets/background/hero_image-light.webp')]">
             {/* background dark layer */}
             <div className="w-1/2 h-screen bg-gradient-to-r from-black/75 from-30%"></div>
             {/* content */}
@@ -27,9 +27,9 @@ export const HeroSection = () => {
                     <img className='relative z-[2]' src={arif_rama} alt="Arif Rama" />
                 </div>
             </div>
-            <p className='absolute inset-x-0 bottom-0 font-bold font-lato text-black'>
+            <div className='absolute inset-x-0 bottom-0 font-bold font-lato text-black'>
                 <p className='bg-white w-fit m-auto px-5 py-1.5'>My Skills:</p>
-            </p>
+            </div>
         </section>
     )
 }
