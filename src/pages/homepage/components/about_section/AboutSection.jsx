@@ -6,7 +6,7 @@ export const AboutSection = () => {
         <section className="min-h-screen py-[120px] sticky top-0 overflow-clip">
             <div className="relative flex justify-between gap-[120px] max-w-screen-xl m-auto">
                 <div>
-                    <article className="sticky top-16 max-w-xl">
+                    <article className="sticky top-14 max-w-xl">
                         <h2 className="font-semibold text-[40px] font-poppins mb-[40px] leading-none">About Me</h2>
                         <AboutContent />
                     </article>
