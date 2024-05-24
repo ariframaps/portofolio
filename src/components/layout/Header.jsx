@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
 import { DarkmodeToggle } from "../others/DarkmodeToggle"
 
 export const Header = () => {
     return (
-        <header className="z-[999] font-poppins text-base fixed left-0 right-0 text-slate-100 font-light">
-            <div className="m-auto h-20 flex justify-between items-center max-w-screen-3xl">
+        <header className='absolute z-[999] inset-x-0 font-poppins text-base text-slate-100 font-light bg-transparent'>
+            <div className="m-auto py-5 flex justify-between items-center max-w-screen-3xl">
                 {/* status */}
                 <div className="flex items-center">
                     Status :
