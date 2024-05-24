@@ -11,7 +11,13 @@ export const HeroSection = () => {
             <div className="max-w-screen-xl absolute m-auto left-0 right-0 bottom-0 top-0 flex justify-between items-center font-poppins text-[#C4C4C4]">
                 <div>
                     <span className='font-lato text-[20px]'>Front-end Web Developer</span>
-                    <h1 className='text-[48px] mt-[20px] mb-[35px] text-white font-bold leading-[60px]'>Hi, I’m <span className='bg-black px-4 text-[#FFE500] drop-shadow-lg'>Arif Rama</span><br />From Indonesia</h1>
+                    <h1 className='text-[48px] mt-[20px] mb-[35px] text-white font-bold leading-[60px]'>
+                        Hi, I’m
+                        <span className='mx-2 px-4 py-1 text-black drop-shadow-lg before:block before:absolute before:inset-1 before:bottom-0 before:-skew-y-3 before:bg-[#FFE500] relative inline-block'>
+                            <span className='relative skew-y-2'>Arif Rama</span>
+                        </span><br />
+                        From Indonesia
+                    </h1>
                     {/* social link */}
                     <SocialButton />
                 </div>

@@ -1,5 +1,5 @@
 export const AboutSection = () => {
     return (
-        <div>AboutSection</div>
+        <section>AboutSection</section>
     )
 }

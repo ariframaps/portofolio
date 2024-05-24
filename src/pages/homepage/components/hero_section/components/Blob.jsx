@@ -19,7 +19,7 @@ export const Blob = () => {
                     </path>
                 </svg>
             </div>
-            <div className="absolute left-[-40px] z-[0] w-[600px] h-[600px] blur-2xl">
+            <div className="absolute left-[-40px] z-[0] w-[600px] h-[600px] blur-xl">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#EFF188" transform="translate(100 100)">
                         <animate attributeName="d" dur="10000ms" repeatCount='indefinite' values='
