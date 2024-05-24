@@ -13,8 +13,8 @@ export const HeroSection = () => {
                     <span className='font-lato text-[20px]'>Front-end Web Developer</span>
                     <h1 className='text-[48px] mt-[20px] mb-[35px] text-white font-bold leading-[60px]'>
                         Hi, I’m
-                        <span className='mx-2 px-4 py-1 text-black drop-shadow-lg before:block before:absolute before:inset-1 before:bottom-0 before:-skew-y-3 before:bg-[#FFE500] relative inline-block'>
-                            <span className='relative skew-y-2'>Arif Rama</span>
+                        <span className='mx-2 px-4 py-1 text-black drop-shadow-lg before:duration-200 before:block before:absolute before:inset-1 before:bottom-0 before:hover:skew-y-3 before:-skew-y-3 before:bg-[#FFE500] relative inline-block'>
+                            <span className='relative'>Arif Rama</span>
                         </span><br />
                         From Indonesia
                     </h1>

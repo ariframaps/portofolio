@@ -3,7 +3,7 @@ import github from '../../assets/logo/github.svg';
 
 export const Footer = () => {
     return (
-        <footer className="h-80 bg-slate-100">
+        <footer className="relative z-[2] h-80 bg-slate-50">
             <div className="flex items-center max-w-xl m-auto h-full">
                 <div className='flex justify-between w-full'>
                     <div>
