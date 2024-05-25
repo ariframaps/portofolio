@@ -12,6 +12,7 @@ import figma from '../../../assets/logo/figma.svg';
 import firebase from '../../../assets/logo/firebase.svg';
 import php from '../../../assets/logo/php.svg';
 import MySQL from '../../../assets/logo/MySQL.svg';
+import { useState } from 'react';
 
 export const Skills = () => {
     const logos = [
@@ -31,12 +32,28 @@ export const Skills = () => {
         { src: MySQL, alt: "MySQL logo" },
     ];
 
+    const [showSkills, setShowSkills] = useState(false)
+
     return (
-        <section className="relative z-[2] shadow text-center flex flex-col items-center justify-center py-[30px]">
-            <div className='flex gap-[48px]'>
-                {logos.map((logo, index) => (
-                    <img src={logo.src} alt={logo.alt} key={index} />
-                ))}
+        <section className="relative z-[2] shadow flex justify-center py-[30px]">
+            <div className={`${showSkills ? 'h-auto' : 'max-h-12 overflow-hidden'} px-8 xl:px-0 flex flex-wrap  justify-center gap-[48px] lg:h-auto`} >
+                {
+                    logos.map((logo, index) => (
+                        <img src={logo.src} alt={logo.alt} key={index} />
+                    ))
+                }
+            </div>
+            <div onClick={() => setShowSkills(!showSkills)} className='xl:hidden absolute bg-slate-100 hover:bg-slate-200 duration-100 -bottom-7 shadow inset-x-0 flex flex-col justify-center items-center cursor-pointer'>
+                {showSkills ? 'Less' : 'More'}
+                {showSkills ? (
+                    <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m5 15 7-7 7 7" />
+                    </svg>) : (
+
+                    <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
+                    </svg>
+                )}
             </div>
         </section>
     )
