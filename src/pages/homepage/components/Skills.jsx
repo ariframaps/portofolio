@@ -14,23 +14,29 @@ import php from '../../../assets/logo/php.svg';
 import MySQL from '../../../assets/logo/MySQL.svg';
 
 export const Skills = () => {
+    const logos = [
+        { src: HTML, alt: "HTML logo" },
+        { src: CSS, alt: "CSS logo" },
+        { src: javascript, alt: "javascript logo" },
+        { src: React, alt: "React logo" },
+        { src: nextjs, alt: "nextjs logo" },
+        { src: tailwindcss, alt: "tailwindcss logo" },
+        { src: jquery, alt: "jquery logo" },
+        { src: nodejs, alt: "nodejs logo" },
+        { src: bootstrap, alt: "bootstrap logo" },
+        { src: Sass, alt: "Sass logo" },
+        { src: figma, alt: "figma logo" },
+        { src: firebase, alt: "firebase logo" },
+        { src: php, alt: "php logo" },
+        { src: MySQL, alt: "MySQL logo" },
+    ];
+
     return (
         <section className="relative z-[2] shadow text-center flex flex-col items-center justify-center py-[30px]">
             <div className='flex gap-[48px]'>
-                <img src={HTML} alt="HTML logo" />
-                <img src={CSS} alt="CSS logo" />
-                <img src={javascript} alt="javascript logo" />
-                <img src={React} alt="React logo" />
-                <img src={nextjs} alt="nextjs logo" />
-                <img src={tailwindcss} alt="tailwindcss logo" />
-                <img src={jquery} alt="jquery logo" />
-                <img src={nodejs} alt="nodejs logo" />
-                <img src={bootstrap} alt="bootstrap logo" />
-                <img src={Sass} alt="Sass logo" />
-                <img src={figma} alt="figma logo" />
-                <img src={firebase} alt="firebase logo" />
-                <img src={php} alt="php logo" />
-                <img src={MySQL} alt="MySQL logo" />
+                {logos.map(logo => (
+                    <img src={logo.src} alt={logo.alt} />
+                ))}
             </div>
         </section>
     )
