@@ -34,8 +34,8 @@ export const Skills = () => {
     return (
         <section className="relative z-[2] shadow text-center flex flex-col items-center justify-center py-[30px]">
             <div className='flex gap-[48px]'>
-                {logos.map(logo => (
-                    <img src={logo.src} alt={logo.alt} />
+                {logos.map((logo, index) => (
+                    <img src={logo.src} alt={logo.alt} key={index} />
                 ))}
             </div>
         </section>
