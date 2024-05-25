@@ -2,8 +2,8 @@ import { TechnologyUsed } from "./TechnologyUsed"
 
 export const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex }) => {
     return (
-        <a href={project.web_link} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={(() => setHoveredIndex(null))} className={`flex gap-5 lg:p-3 py-3 lg:py-5 rounded-md bg-white border border-0 border-b-2 duration-300 hover:bg-[#FAFAFC] cursor-pointer hover:-translate-y-px ${(hoveredIndex !== null && index !== hoveredIndex) ? 'blur-[2px]' : ''}`}>
-            <img className="min-w-32 lg:min-w-40 bg-slate-100 min-h-24 rounded-lg" src={project.thumbnail_url} alt="thumbnail" />
+        <a href={project.web_link} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={(() => setHoveredIndex(null))} className={`dark:bg-[#080E16] flex gap-5 lg:p-3 py-3 lg:py-5 rounded-md bg-white border border-0 dark:border-slate-900 border-b-2 duration-300 hover:bg-[#0B1420] hover:bg-[#FAFAFC] cursor-pointer hover:-translate-y-px ${(hoveredIndex !== null && index !== hoveredIndex) ? 'blur-[2px]' : ''}`}>
+            <img className="min-w-32 lg:min-w-40 dark:bg-[#060A13] bg-slate-100 min-h-24 rounded-lg" src={project.thumbnail_url} alt="thumbnail" />
             <div>
                 <div className="flex gap-3 items-center">
                     <h5 className="font-poppins font-semibold text-lg leading-none">{project.name}</h5>

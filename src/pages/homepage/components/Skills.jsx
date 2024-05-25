@@ -35,7 +35,7 @@ export const Skills = () => {
     const [showSkills, setShowSkills] = useState(false)
 
     return (
-        <section className="relative z-[2] shadow flex justify-center py-[30px]">
+        <section className="relative z-[2] shadow dark:shadow-[0_1px_3px_0px_rgba(44,44,44,1)] flex justify-center py-[30px]">
             <div className={`${showSkills ? 'h-auto' : 'max-h-12 overflow-hidden'} px-8 xl:px-0 flex flex-wrap  justify-center gap-[48px] lg:h-auto`} >
                 {
                     logos.map((logo, index) => (
