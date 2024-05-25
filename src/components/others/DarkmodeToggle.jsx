@@ -17,9 +17,9 @@ export const DarkmodeToggle = () => {
     }
 
     return (
-        <div className="flex items-center gap-x-2">
+        <div onClick={() => setDarkMode(!darkMode)} className="flex items-center gap-x-2 me-3 md:me-0">
             {/* moon / sun logo */}
-            <svg className="w-5 h-5 text-gray-800 dark:text-yellow-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-800 dark:text-yellow-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 {darkMode ? (
                     <path fillRule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clipRule="evenodd" />
                 ) : (
@@ -28,7 +28,7 @@ export const DarkmodeToggle = () => {
             </svg>
 
             {/* toggle */}
-            <div onClick={() => setDarkMode(!darkMode)} className={`${darkMode ? 'justify-end bg-sky-300' : ' justify-start bg-slate-100'} duration-200  flex items-center p-1.5 w-11 h-7 rounded-2xl border border-slate-400`}>
+            <div className={`${darkMode ? 'justify-end bg-sky-300' : ' justify-start bg-slate-100'} duration-200  flex items-center p-1 md:p-1.5 w-10 md:w-11 h-6 md:h-7 rounded-2xl border border-slate-400`}>
                 <svg className={`block w-4 h-4 rounded-full duration-200 ${darkMode ? 'bg-slate-100' : ' bg-sky-300'}`} />
             </div>
         </div>
