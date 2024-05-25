@@ -3,7 +3,7 @@ import { ProjectList } from "./components/ProjectList"
 
 export const AboutSection = () => {
     return (
-        <section className="min-h-screen py-[120px] sticky top-0 overflow-clip">
+        <section className="min-h-screen pt-[120px] pb-[150px] sticky top-0">
             <div className="relative flex justify-between gap-[120px] max-w-screen-xl m-auto">
                 <div>
                     <article className="sticky top-14 max-w-xl">

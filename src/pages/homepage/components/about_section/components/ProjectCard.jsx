@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { TechnologyUsed } from "./TechnologyUsed"
 
 export const ProjectCard = ({ index, hoveredIndex, setHoveredIndex }) => {
@@ -16,7 +15,6 @@ export const ProjectCard = ({ index, hoveredIndex, setHoveredIndex }) => {
                     {techList.map(((tech, index) => (
                         <TechnologyUsed key={index} tech={tech} />
                     )))}
-
                 </ul>
             </div>
         </div>
