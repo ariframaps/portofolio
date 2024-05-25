@@ -1,7 +1,7 @@
 export const Blob = () => {
     return (
         <div>
-            <div className="absolute left-[-40px] z-[1] w-[600px] h-[600px]">
+            <div className="absolute left-[-40px] z-[1] w-[350px] h-[350px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#EFF188" transform="translate(100 100)">
                         <animate attributeName="d" dur="8000ms" repeatCount='indefinite' values='
@@ -19,7 +19,7 @@ export const Blob = () => {
                     </path>
                 </svg>
             </div>
-            <div className="absolute left-[-40px] z-[0] w-[600px] h-[600px] blur-xl">
+            <div className="absolute left-[-40px] z-[0] w-[350px] h-[350px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] blur-xl">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#EFF188" transform="translate(100 100)">
                         <animate attributeName="d" dur="8000ms" repeatCount='indefinite' values='
