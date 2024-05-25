@@ -1,7 +1,15 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const DarkmodeToggle = () => {
-    const [darkMode, setDarkMode] = useState(false);
+
+    // darkmode fetch value
+    const localStorageTheme = JSON.parse(localStorage.getItem('darkMode'))
+    const [darkMode, setDarkMode] = useState(localStorageTheme != null ? localStorageTheme : true)
+
+    useEffect(() => {
+        localStorage.setItem('darkMode', JSON.stringify(darkMode));
+        darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark');
+    }, [darkMode])
 
     // handle dark mode toggle
     function handleDarkModeToggle() {
@@ -20,7 +28,7 @@ export const DarkmodeToggle = () => {
             </svg>
 
             {/* toggle */}
-            <div onClick={handleDarkModeToggle} className={`${darkMode ? 'justify-end bg-sky-300' : ' justify-start bg-slate-100'} duration-200  flex items-center p-1.5 w-11 h-7 rounded-2xl border border-slate-400`}>
+            <div onClick={() => setDarkMode(!darkMode)} className={`${darkMode ? 'justify-end bg-sky-300' : ' justify-start bg-slate-100'} duration-200  flex items-center p-1.5 w-11 h-7 rounded-2xl border border-slate-400`}>
                 <svg className={`block w-4 h-4 rounded-full duration-200 ${darkMode ? 'bg-slate-100' : ' bg-sky-300'}`} />
             </div>
         </div>
