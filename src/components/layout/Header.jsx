@@ -2,35 +2,12 @@ import { DarkmodeToggle } from "../others/DarkmodeToggle"
 
 export const Header = () => {
     return (
-        // <header className='absolute z-[999] inset-x-0 font-poppins text-base text-slate-100 font-light bg-transparent'>
-        //     <div className="m-auto py-5 flex justify-between items-center max-w-screen-3xl">
-        //         {/* status */}
-        //         <div className="flex items-center">
-        //             Status :
-        //             <span className="flex items-center ms-2 px-2.5 py-1 rounded-md bg-white text-black">
-        //                 Available
-        //                 <svg className="ms-2 w-2.5 h-2.5 bg-green-400 rounded-full"></svg>
-        //             </span>
-        //         </div>
-        //         {/* navigation */}
-        //         <nav className="list-none flex gap-x-9">
-        //             <li>Home</li>
-        //             <li>About me</li>
-        //             <li>Project</li>
-        //         </nav>
-        //         {/* dark mode toggle*/}
-        //         <DarkmodeToggle />
-        //     </div>
-        // </header>
-
-
-
-        <nav className="absolute z-[999] inset-x-0 font-poppins text-base text-slate-100">
-            <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <header className="absolute z-[999] inset-x-0 font-poppins text-base text-slate-100">
+            <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto py-7">
                 <div className="flex items-center">
-                    <span className="flex items-center ms-2 px-2.5 py-1 rounded-md bg-white text-black">
+                    <span className="flex items-center ms-2 px-2.5 py-1 rounded-md bg-slate-100 text-black">
                         Available
-                        <svg className="ms-2 w-2.5 h-2.5 bg-green-400 rounded-full"></svg>
+                        <svg className="ms-2 w-2.5 h-2.5 bg-sky-300 rounded-full"></svg>
                     </span>
                 </div>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -42,7 +19,7 @@ export const Header = () => {
                         </svg>
                     </button>
                 </div>
-                <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <nav className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-base border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
                         <li>
                             <a href="#" className="block py-2 px-3 text-white bg-yellow-700 rounded md:bg-transparent md:text-yellow-700 md:p-0 md:dark:text-yellow-500" aria-current="page">Home</a>
@@ -51,9 +28,9 @@ export const Header = () => {
                             <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-yellow-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </nav>
+        </header>
 
     )
 }

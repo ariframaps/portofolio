@@ -9,8 +9,12 @@ export const Footer = () => {
                     <div>
                         <p className='font-poppins font-medium'>Connect with me</p>
                         <div className='flex mt-[30px] gap-[17px]'>
-                            <img className='w-[32px]' src={linkedin} alt="Linkedin logo" />
-                            <img className='w-[32px] invert' src={github} alt="github logo" />
+                            <a href="https://linkedin.com/in/ariframaps">
+                                <img className='w-[32px]' src={linkedin} alt="Linkedin logo" />
+                            </a>
+                            <a href="https://github.com/ariframaps">
+                                <img className='w-[32px] invert' src={github} alt="github logo" />
+                            </a>
                         </div>
                     </div>
                     <div>
