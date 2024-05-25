@@ -3,7 +3,7 @@ import github from '../../../../../assets/logo/github.svg';
 
 export const SocialButton = () => {
     return (
-        <div className='flex gap-[20px]'>
+        <div className='flex gap-[20px] text-sm md:text-base'>
             <a href='https://linkedin.com/in/ariframaps' className='flex gap-[10px] px-[12px] py-[10px] items-center rounded-lg duration-200 hover:bg-white hover:text-black'>
                 <img className='inline' src={linkedin} alt="linkedin logo" />
                 LinkedIn

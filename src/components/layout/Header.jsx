@@ -23,7 +23,7 @@ export const Header = () => {
                     </button>
                 </div>
                 <nav className={`${showMenu ? '' : 'hidden'} items-center justify-between w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
-                    <ul className="flex flex-col p-4 md:p-0 mt-4 font-base border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+                    <ul className="flex flex-col backdrop-blur-lg md:backdrop-blur-none p-4 md:p-0 mt-4 font-base border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
                         <li>
                             <a onClick={() => setShowMenu(!showMenu)} href="#hero_section" className="block py-2 px-3 text-white bg-yellow-700 rounded md:bg-transparent md:text-yellow-700 md:p-0 md:dark:text-yellow-500" aria-current="page">Home</a>
                         </li>

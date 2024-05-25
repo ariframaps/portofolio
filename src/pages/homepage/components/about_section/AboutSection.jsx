@@ -7,7 +7,7 @@ export const AboutSection = () => {
             <div className="relative flex flex-col lg:flex-row justify-between items-center lg:items-start gap-[70px] max-w-screen-xl m-auto">
                 <article>
                     <div className="sticky top-14 lg:max-w-xl">
-                        <h2 className="text-center lg:text-start font-semibold text-[40px] font-poppins mb-[40px] leading-none">About Me</h2>
+                        <h2 className="text-center lg:text-start font-semibold text-3xl md:text-[40px] font-poppins mb-8 md:mb-[40px] leading-none">About Me</h2>
                         <AboutContent />
                         <a href="#" className="flex items-center gap-2 font-poppins block mt-7 bg-black text-white w-fit p-3 px-4 rounded-md border border-black hover:bg-transparent hover:text-black duration-200">
                             See full resume

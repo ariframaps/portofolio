@@ -8,10 +8,10 @@ export const HeroSection = () => {
             {/* background dark layer */}
             <div className="w-1/2 h-screen bg-gradient-to-r from-black/75 from-30%"></div>
             {/* content */}
-            <div className="px-4 md:px-8 xl:px-0 max-w-screen-xl absolute m-auto left-0 right-0 bottom-0 top-0 flex flex-col md:flex-row justify-center gap-[7vh] md:gap-7 lg:gap-0 md:justify-between items-center font-poppins text-[#C4C4C4]">
+            <div className="px-4 md:px-8 xl:px-0 max-w-screen-xl absolute m-auto left-0 right-0 bottom-0 top-0 flex flex-col md:flex-row justify-center gap-[4vh] md:gap-7 lg:gap-0 md:justify-between sm:items-center font-poppins text-[#C4C4C4]">
                 <div>
-                    <span className='font-lato text-[20px]'>Front-end Web Developer</span>
-                    <h1 className='text-4xl lg:text-5xl mt-3 md:mt-[20px] mb-[35px] text-white font-bold leading-[50px] lg:leading-[60px]'>
+                    <span className='font-lato text-base md:text-[20px]'>Front-end Web Developer</span>
+                    <h1 className='text-4xl lg:text-5xl mt-3 md:mt-[20px] mb-3 lg:mb-[35px] text-white font-bold leading-[5vh] lg:leading-[60px]'>
                         Hi, I’m
                         <span className='xl:mx-2 px-2 md:px-4 py-1 text-[#FFE500] md:text-black drop-shadow-lg before:duration-200 before:hidden md:before:block before:absolute before:inset-1 before:bottom-0 before:hover:skew-y-3 before:-skew-y-3 before:bg-[#FFE500] relative inline-block'>
                             <span className='relative'>Arif Rama</span>
@@ -24,7 +24,7 @@ export const HeroSection = () => {
                 {/* image and blob */}
                 <div className='md:block relative'>
                     <Blob />
-                    <img className='w-[300px] sm:w-[350px] lg:w-[517px] relative z-[2]' src={arif_rama} alt="Arif Rama" />
+                    <img className='w-[35vh] sm:w-[350px] lg:w-[517px] relative z-[2]' src={arif_rama} alt="Arif Rama" />
                 </div>
             </div>
             <div className='absolute inset-x-0 bottom-0 font-bold font-lato text-black'>
