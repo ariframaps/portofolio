@@ -4,7 +4,7 @@ import { Blob } from './components/Blob';
 
 export const HeroSection = () => {
     return (
-        <section className="relative z-[2] min-h-screen bg-[url('../assets/background/hero_image-light.webp')]">
+        <section id='hero_section' className="relative z-[2] min-h-screen bg-[url('../assets/background/hero_image-light.webp')]">
             {/* background dark layer */}
             <div className="w-1/2 h-screen bg-gradient-to-r from-black/75 from-30%"></div>
             {/* content */}
