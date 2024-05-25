@@ -3,11 +3,11 @@ import { ProjectList } from "./components/ProjectList"
 
 export const AboutSection = () => {
     return (
-        <section id="about_section" className="min-h-screen pt-[120px] pb-[150px] sticky top-0">
-            <div className="relative flex justify-between gap-[70px] max-w-screen-xl m-auto">
+        <section id="about_section" className="px-4 md:px-8 xl:px-0 min-h-screen pt-[90px] pb-[70px] lg:pt-[120px] lg:pb-[150px]">
+            <div className="relative flex flex-col lg:flex-row justify-between items-center lg:items-start gap-[70px] max-w-screen-xl m-auto">
                 <article>
-                    <div className="sticky top-14 max-w-xl">
-                        <h2 className="font-semibold text-[40px] font-poppins mb-[40px] leading-none">About Me</h2>
+                    <div className="sticky top-14 lg:max-w-xl">
+                        <h2 className="text-center lg:text-start font-semibold text-[40px] font-poppins mb-[40px] leading-none">About Me</h2>
                         <AboutContent />
                         <a href="#" className="flex items-center gap-2 font-poppins block mt-7 bg-black text-white w-fit p-3 px-4 rounded-md border border-black hover:bg-transparent hover:text-black duration-200">
                             See full resume
@@ -18,7 +18,7 @@ export const AboutSection = () => {
                     </div>
                 </article>
                 <article className="flex-1">
-                    <h3 className="font-semibold text-[20px] font-poppins mb-[40px]">Project</h3>
+                    <h3 className="pt-3 border border-0 border-t-2 lg:border-0 font-semibold text-[20px] font-poppins mb-[40px]">Project</h3>
                     <ProjectList />
                 </article>
             </div>

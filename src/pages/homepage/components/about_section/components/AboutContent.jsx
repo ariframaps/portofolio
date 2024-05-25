@@ -1,6 +1,6 @@
 export const AboutContent = () => {
     return (
-        <div className="flex flex-col text-lg gap-4 text-[#717171] font-lato pe-[20px] border-box border border-0 border-r-2 leading-8">
+        <div className="flex flex-col text-lg gap-4 text-[#717171] font-lato lg:pe-[20px] lg:border-box lg:border lg:border-0 lg:border-r-2 leading-8">
             <p>Back in <b className="text-black">2020</b>, I started learning web development by creating simple websites using <b className="text-black">HTML</b>, <b className="text-black">CSS</b>, and <b className="text-black">JavaScript</b>. This sparked my passion for coding and led me to explore more. 🚀 </p>
 
             <p>I began my experience by creating websites and building landing pages using <b className="text-black">WordPress</b> for local businesses and completing several projects for my web programming courses at university. I also enjoy diving into back-end development with <b className="text-black">Node.js</b> and <b className="text-black">PHP</b>. 💻 These experiences have helped me build a solid foundation in web development. 🏗️
