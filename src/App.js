@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-[#060A13] ">
+    <div className="bg-slate-50 dark:bg-[#060A13] ">
       <CursorsEffect cursorPosition={cursorPosition} />
       <Header />
       <AllRoutes />

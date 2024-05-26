@@ -3,7 +3,7 @@ import github from '../../assets/logo/github.svg';
 
 export const Footer = () => {
     return (
-        <footer className="px-8 xl:px-0 relative z-[2] h-60 lg:h-80 dark:bg-[#080E17] bg-slate-50 dark:text-white">
+        <footer className="px-8 xl:px-0 relative z-[2] h-60 lg:h-80 dark:bg-[#080E17] bg-slate-100 dark:text-white">
             <div className="flex items-center max-w-xl m-auto h-full">
                 <div className='flex flex-col lg:flex-row justify-between w-full'>
                     <div className='w-fit pb-4 border border-0 border-b-2 mb-4 md:border-b-0'>
