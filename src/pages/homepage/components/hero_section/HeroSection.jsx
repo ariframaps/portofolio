@@ -7,7 +7,7 @@ export const HeroSection = () => {
         <section id='hero_section' className="bg-[url('../assets/background/hero_image-light.webp')] relative z-[2] min-h-screen">
             {/* background dark layer */}
             <div className="dark:hidden w-1/2 h-screen bg-gradient-to-r from-black/75 from-30%"></div>
-            <div className="absolute top-0 inset-0 h-screen duration-200 bg-black/0 dark:bg-black/[85%] dark:backdrop-hue-rotate-90"></div>
+            <div className="absolute top-0 inset-0 h-screen duration-200 bg-black/0 dark:bg-black/[85%] backdrop-hue-rotate-0 dark:-backdrop-hue-rotate-90"></div>
             {/* content */}
             <div className="px-4 md:px-8 xl:px-0 max-w-screen-xl absolute m-auto left-0 right-0 bottom-0 top-0 flex flex-col md:flex-row justify-center gap-[4vh] md:gap-7 lg:gap-0 md:justify-between sm:items-center font-poppins text-[#C4C4C4]">
                 <div>

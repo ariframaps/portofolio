@@ -1,9 +1,18 @@
+import { useEffect, useState } from "react";
+
 export const Blob = () => {
+    const localStorageTheme = JSON.parse(localStorage.getItem('darkMode'));
+    const [fill, setFill] = useState('#EFF188');
+
+    useEffect(() => {
+        localStorageTheme ? setFill('#207379') : setFill('#EFF188');
+    }, [localStorageTheme])
+
     return (
         <div>
             <div className="absolute left-[-40px] z-[1] w-[350px] h-[350px] dark:md:w-[350px] dark:md:h-[350px] md:w-[400px] md:h-[400px] dark:lg:w-[500px] dark:lg:h-[500px] lg:w-[600px] lg:h-[600px]">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#EFF188" transform="translate(100 100)">
+                    <path fill={fill} transform="translate(100 100)">
                         <animate attributeName="d" dur="8000ms" repeatCount='indefinite' values='
                             M43.5,-57.7C58.4,-49,74.1,-39.1,77,-26C79.9,-12.9,70.1,3.3,64.3,20.8C58.5,38.3,56.7,57,46.7,64.2C36.6,71.5,18.3,67.3,-0.2,67.6C-18.7,67.9,-37.4,72.6,-49.6,66C-61.7,59.4,-67.3,41.5,-68.8,25.1C-70.3,8.7,-67.8,-6.2,-62.4,-19.5C-57.1,-32.8,-48.9,-44.5,-38,-54.6C-27.2,-64.6,-13.6,-73.2,0.3,-73.7C14.3,-74.1,28.5,-66.5,43.5,-57.7Z;
 
@@ -21,7 +30,7 @@ export const Blob = () => {
             </div>
             <div className="absolute left-[-40px] z-[0] w-[350px] h-[350px] dark:md:w-[350px] dark:md:h-[350px] md:w-[400px] md:h-[400px] dark:lg:w-[500px] dark:lg:h-[500px] lg:w-[600px] lg:h-[600px] blur-xl">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#EFF188" transform="translate(100 100)">
+                    <path fill={fill} transform="translate(100 100)">
                         <animate attributeName="d" dur="8000ms" repeatCount='indefinite' values='
                             M43.5,-57.7C58.4,-49,74.1,-39.1,77,-26C79.9,-12.9,70.1,3.3,64.3,20.8C58.5,38.3,56.7,57,46.7,64.2C36.6,71.5,18.3,67.3,-0.2,67.6C-18.7,67.9,-37.4,72.6,-49.6,66C-61.7,59.4,-67.3,41.5,-68.8,25.1C-70.3,8.7,-67.8,-6.2,-62.4,-19.5C-57.1,-32.8,-48.9,-44.5,-38,-54.6C-27.2,-64.6,-13.6,-73.2,0.3,-73.7C14.3,-74.1,28.5,-66.5,43.5,-57.7Z;
 
