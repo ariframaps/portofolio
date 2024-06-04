@@ -4,7 +4,7 @@ export const GetProjects = async () => {
     try {
         const response = await fetch('https://api.github.com/users/ariframaps/repos');
         const result = await response.json();
-        const filteredResults = result.filter(result => result.homepage !== null);
+        const filteredResults = result.filter(result => (result.homepage !== null && result.homepage !== ''));
 
         filteredResults.forEach(repo => {
             const project = {
