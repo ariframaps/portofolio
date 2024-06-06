@@ -10,7 +10,6 @@ export const ProjectList = () => {
         const fetchProjects = async () => {
             const data = await GetProjects();
             setProjectList(data);
-            console.log(data);
         }
         fetchProjects();
     }, [])
