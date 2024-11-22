@@ -1,13 +1,80 @@
 export const AboutContent = () => {
-    return (
-        <div className="flex flex-col md:text-lg gap-3 md:gap-4 text-[#717171] dark:text-[#7F7F7F] font-lato lg:pe-[20px] lg:border-box lg:border lg:border-0 lg:border-r-2 dark:border-slate-700 leading-7 md:leading-8">
-            <p>Back in <b className="text-black dark:text-[#B8B8B8]">2020</b>, I started learning web development by creating simple websites using <b className="text-black dark:text-[#B8B8B8]">HTML</b>, <b className="text-black dark:text-[#B8B8B8]">CSS</b>, and <b className="text-black dark:text-[#B8B8B8]">JavaScript</b>. This sparked my passion for coding and led me to explore more. 🚀 </p>
+  return (
+    <div className="flex flex-col md:text-lg gap-3 md:gap-4 text-[#717171] dark:text-[#7F7F7F] font-lato lg:pe-[20px] lg:border-box lg:border lg:border-0 lg:border-r-2 dark:border-slate-700 leading-7 md:leading-8">
+      <p>
+        Back in <b className="text-black dark:text-[#B8B8B8]">2020</b>, I
+        started learning web development by creating simple websites using{" "}
+        <b className="text-black dark:text-[#B8B8B8]">HTML</b>,{" "}
+        <b className="text-black dark:text-[#B8B8B8]">CSS</b>, and{" "}
+        <b className="text-black dark:text-[#B8B8B8]">JavaScript</b>. This
+        sparked my passion for coding and led me to explore more. 🚀{" "}
+      </p>
 
-            <p>I began my experience by creating websites and building landing pages using <b className="text-black dark:text-[#B8B8B8]">WordPress</b> for local businesses and completing several projects for my web programming courses at university. I also enjoy diving into back-end development with <b className="text-black dark:text-[#B8B8B8]">Node.js</b> and <b className="text-black dark:text-[#B8B8B8]">PHP</b>. 💻 These experiences have helped me build a solid foundation in web development. 🏗️
-            </p>
+      <p>
+        I began my experience by creating websites and building landing pages
+        using <b className="text-black dark:text-[#B8B8B8]">WordPress</b> for
+        local businesses and completing several projects for my web programming
+        courses at university. I also enjoy diving into back-end development
+        with <b className="text-black dark:text-[#B8B8B8]">Node.js</b> and{" "}
+        <b className="text-black dark:text-[#B8B8B8]">PHP</b>. 💻 These
+        experiences have helped me build a solid foundation in web development.
+        🏗️
+      </p>
 
-            <p>These days, my main focus is creating <b className="text-black dark:text-[#B8B8B8]">user-friendly</b> and <b className="text-black dark:text-[#B8B8B8]">accessible</b> web applications. I love working with <b className="text-black dark:text-[#B8B8B8]">React</b> and <b className="text-black dark:text-[#B8B8B8]">Next.js</b>, finding that sweet spot where design meets functionality. I’m passionate about writing <b className="text-black dark:text-[#B8B8B8]">clean code</b> that is easy to understand and maintain. 🌐 In my free time, I enjoy working on side projects. Recently, I've been developing a web app using <b className="text-black dark:text-[#B8B8B8]">Firebase</b>, which has been a great learning experience. 📚
-            </p>
-        </div>
-    )
-}
+      <p>
+        These days, my main focus is creating{" "}
+        <b className="text-black dark:text-[#B8B8B8]">user-friendly</b> and{" "}
+        <b className="text-black dark:text-[#B8B8B8]">accessible</b> web
+        applications. I love working with{" "}
+        <b className="text-black dark:text-[#B8B8B8]">React</b> and{" "}
+        <b className="text-black dark:text-[#B8B8B8]">Next.js</b>, finding that
+        sweet spot where design meets functionality. I’m passionate about
+        writing <b className="text-black dark:text-[#B8B8B8]">clean code</b>{" "}
+        that is easy to understand and maintain. 🌐 In my free time, I enjoy
+        working on side projects. Recently, I've been developing a web app using{" "}
+        <b className="text-black dark:text-[#B8B8B8]">
+          Firebase, PostgreSQL, MongoDB
+        </b>
+        , which has been a great learning experience. 📚
+      </p>
+
+      <div className="my-3">
+        <h3 className="text-xl font-bold text-black my-3 text-center">
+          Skill Set
+        </h3>
+        <ul className="list-disc">
+          <li>
+            <b className="text-black dark:text-[#B8B8B8]">
+              Programming Languages
+            </b>
+            : JavaScript, TypeScript, PHP, Kotlin, Java
+          </li>
+          <li>
+            <b className="text-black dark:text-[#B8B8B8]">
+              Frontend Development
+            </b>
+            : React, Next.js, jQuery, Tailwind CSS, Bootstrap, SCSS
+          </li>
+          <li>
+            <b className="text-black dark:text-[#B8B8B8]">
+              Backend Development
+            </b>
+            : Node.js, Express.js, RESTful API, Prisma
+          </li>
+          <li>
+            <b className="text-black dark:text-[#B8B8B8]">Databases</b>:
+            MongoDB, Firebase, MySQL, PostgreSQL, Sanity
+          </li>
+          <li>
+            <b className="text-black dark:text-[#B8B8B8]">Tools & Platforms</b>:
+            Git, GitHub, Docker, Jenkins, Visual Paradigm
+          </li>
+          <li>
+            <b className="text-black dark:text-[#B8B8B8]">Others</b>: Redux
+            Toolkit, Clerk, AuthJs, Sanity, JSON-Server
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
