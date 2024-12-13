@@ -16,7 +16,7 @@ export const AboutSection = () => {
             <a
               href="https://docs.google.com/document/d/1jaR5SJuTWuJjqDRPMF3w44H0L_g9VUR-1JUTdf708pc/edit?tab=t.0"
               className="flex items-center gap-2 font-poppins block mt-7 bg-black text-white dark:text-slate-300 w-fit p-3 px-4 text-xs md:text-md rounded-md border dark:border-slate-700 border-black hover:bg-transparent dark:hover:bg-slate-200 hover:text-black duration-200">
-              See full CV
+              See Resume
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
