@@ -1,4 +1,4 @@
-export default [
+const confidentialProject = [
 	{
 		name: "Elomate",
 		category: "client_confidential",
@@ -177,3 +177,5 @@ export default [
 		},
 	},
 ];
+
+export default confidentialProject;

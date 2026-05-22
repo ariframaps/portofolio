@@ -1,4 +1,4 @@
-export default [
+const publicProject = [
 	{
 		name: "Kassen Website",
 		web_link: "https://kassen.com.tw",
@@ -318,3 +318,5 @@ export default [
 		},
 	},
 ];
+
+export default publicProject;
