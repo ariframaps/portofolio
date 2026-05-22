@@ -7,12 +7,6 @@ import { WorkTabs } from "./components/WorkTabs";
 
 const TABS = [
 	{
-		id: "personal",
-		label: "Personal",
-		emoji: "⚡",
-		desc: "Side projects & open-source work I built for fun or learning.",
-	},
-	{
 		id: "client_public",
 		label: "Client Work (Public)",
 		emoji: "💼",
@@ -24,10 +18,16 @@ const TABS = [
 		emoji: "🔒",
 		desc: "Projects under NDA. I can share what I worked on, but not the code.",
 	},
+	{
+		id: "personal",
+		label: "Personal",
+		emoji: "⚡",
+		desc: "Side projects & open-source work I built for fun or learning.",
+	},
 ];
 
 export const WorkSection = () => {
-	const [activeTab, setActiveTab] = useState("personal");
+	const [activeTab, setActiveTab] = useState("client_public");
 	const [projects, setProjects] = useState([]);
 	const [loading, setLoading] = useState(true);
 
