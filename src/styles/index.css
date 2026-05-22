@@ -3,21 +3,42 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-    width: 15px;
+	width: 5px;
+	height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #8e8e8e;
+	background-color: #d2d2d2;
 }
 
 .dark ::-webkit-scrollbar-track {
-    background-color: rgb(26, 26, 26);
+	background-color: rgb(26, 26, 26);
 }
 
 .dark ::-webkit-scrollbar-thumb {
-    background-color: #163c45;
+	background-color: #163c45;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(16px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
