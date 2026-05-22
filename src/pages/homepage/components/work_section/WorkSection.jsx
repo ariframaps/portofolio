@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 // In production: import { GetProjects } from "../../services/ProjectService";
 import { GetProjects } from "../../../../services/ProjectService";
 // For dev/preview with mock data:
-import { MOCK_PROJECTS } from "./mockProjects";
 import { ProjectGrid } from "./components/ProjectGrid";
 import { WorkTabs } from "./components/WorkTabs";
 
@@ -38,7 +37,7 @@ export const WorkSection = () => {
 		// setProjects(MOCK_PROJECTS);
 		// setLoading(false);
 
-		Production: GetProjects().then((data) => {
+		GetProjects().then((data) => {
 			setProjects(data);
 			setLoading(false);
 		});
